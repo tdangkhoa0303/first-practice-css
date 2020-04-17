@@ -1,0 +1,195 @@
+.footer{
+    padding: 40px 7%;
+    background-color: #343e48;
+    color: white; 
+    font-size: 1rem;
+    margin-left: 0;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(189, 187, 187);
+    display: block;
+}
+.footer a:visited{
+    text-decoration: none;
+    color: rgb(189, 187, 187);
+}
+.footer .start a{
+    text-decoration: underline;
+}
+.footer .start{
+    border-bottom: 1px solid #c7cacc;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.footer .grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 31%;
+}
+.footer .grid a{
+    margin: 20px;
+}
+.footer .grid .bold{
+    font-weight: 800;
+    color: white;
+}
+.footer .grid .col4 .social{
+    display: flex;
+}
+.footer .grid .col4 .social a{
+    margin: 0 15px 0 20px;
+    font-size: 1.5em;
+}
+
+.languagePicker select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    margin: 20px 0 0 20px;
+    width: 100%;
+    height: 55px;
+    padding: 10px 0 10px 10px;
+    font-size: 1.1em;
+    outline: none;
+    background-color: #2626270a;
+    color: white;
+    align-items: center;
+    box-shadow: 0 0 2px #c7cacc;
+    
+}
+.languagePicker{
+    position: relative;
+}
+.languagePicker select:focus{
+    border: 1px solid rgb(4, 182, 182);
+}
+
+.languagePicker .narrow{
+    position: absolute;
+    right: -2%;
+    top: 50%;   
+}
+.footer .col4 .button img{
+    width: 160px;
+    height: 45px;
+    margin: 20px 0px 5px 0;
+    padding: 0;
+}
+.footer .col4 .button{
+    display: flex;
+}
+.footer .col4 .button a:nth-child(1){
+    margin-right: 0px;
+}
+
+@media all and (max-width: 1024px){
+    .footer{
+        padding: 20px 2%;
+    }
+    .footer .grid{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 35%;
+    }
+}
+
+@media all and (min-width: 480px){
+    .footer{
+        padding: 20px 5%;
+    }
+    .footer .grid{
+        display: grid;
+        grid-template-columns: 32% 32% 36%;
+    }
+    .footer .grid .col4{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 64% 36%;
+    }
+    .footer .grid .col4 .bold{
+        grid-column: 1/3;
+    }
+    .footer .grid .col4 .social{
+        grid-column-start: 1;
+    }
+    .footer .grid .col4 .button{
+        grid-column-start: 1;
+    }
+    .footer .grid .col4 .button img{
+        margin: 0;
+        width:150px;
+        height: 40px;
+    }
+    .footer .grid .col4 .languagePicker{
+        grid-row-start: 3;
+        grid-column-start: 2;
+        margin-left: 20px;
+    } 
+    .footer .grid .col4 .languagePicker .selectBox{
+        margin: 0;
+    }
+    .languagePicker .narrow{
+        position: absolute;
+        right: 5%;
+        top: 35%;   
+    }
+
+}
+
+@media all and (max-width: 480px){
+    .footer{
+        padding: 20px 10%;
+    }
+    .footer .grid{
+        display: block;
+    }
+    .footer .grid .grid2{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .footer .grid .bold{
+        grid-column: 1/3;
+    }
+    .footer .grid .grid2 a{
+        margin: 15px 15px 15px 0;
+    }
+    .footer .col4{
+        text-align: center;
+    }
+    .footer .grid .col4 .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .languagePicker{
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .languagePicker .selectBox{
+        margin: 0;
+    }
+    .footer .col4 .button{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer .col4 a{
+        margin: 10px 0 10px 0;
+    }
+    .languagePicker .narrow{
+        position: absolute;
+        right: 5%;
+        top: 30%;   
+    }
+    .footer .col4 .button img{
+        width:150px;
+        height: 40px;
+    }
+    
+}
+

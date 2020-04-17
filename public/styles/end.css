@@ -1,0 +1,96 @@
+.end{
+    background-color: #2e363f;
+    color: rgba(255, 255, 255, 0.897);
+    margin: 0;
+    padding: 20px 7%;
+    line-height: 1.5;
+}
+.inlineList{
+    margin: 10px 20px 10px 0;
+}
+.end ul:nth-child(2){
+    margin-top: 15px;
+}
+.end li{
+    display: inline-block;
+}
+.end a{
+    text-decoration: none;
+}
+.end a:visited{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.897);
+}
+.end ul{
+    padding: 0;
+    margin: 0;
+}
+.terms::before{
+    content: "Terms . ";
+}
+.privacy::before{
+    content: "Privacy . ";
+}
+.cookies::before{
+    content: "Cookie";
+}
+.meetup::before{
+    content: "© Meetup 2019 .";
+}
+@media all and (max-width: 1024px){
+    .terms::before{
+        content: "Terms of Service . ";
+    }
+    .privacy::before{
+        content: "Privacy Policy . ";
+    }
+    .cookies::before{
+        content: "Cookie Policy";
+    }
+    .meetup::before{
+        content: "© Meetup 2019 .";
+    }
+    .end{
+        padding: 20px 2%;
+    }
+}
+
+@media all and (max-width: 640px){
+    .terms::before{
+        content: "Terms . ";
+    }
+    .privacy::before{
+        content: "Privacy . ";
+    }
+    .cookies::before{
+        content: "Cookie";
+    }
+    .meetup::before{
+        content: "© Meetup 2019 .";
+    }
+    .end{
+        padding: 20px 2%;
+    }
+}
+
+@media all and (max-width: 480px){
+    .end{
+        padding: 20px 10%;
+    }
+    .terms::before{
+        content: "Terms . ";
+    }
+    .privacy::before{
+        content: "Privacy . ";
+    }
+    .cookies::before{
+        content: "Cookie";
+    }
+    .meetup::before{
+        content: "© Meetup 2019";
+    }
+    .end{
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,119 @@
+.group {
+  margin: 20px 10px;
+  position: relative;
+}
+.group .bold {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
+.group a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  color: rgb(74, 151, 214);
+  font-weight: 800;
+}
+.group p {
+  margin: 5px 0 20px 0;
+}
+.group .wrapper .group-container {
+  height: 320px;
+  width: 250px;
+  border: 0.2px solid rgba(243, 240, 240, 0.705);
+  box-shadow: 1px 2px 5px rgba(201, 201, 204, 0.452);
+  margin: 10px 10px;
+  min-width: 250px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 10px 20px 10px 2px;
+  position: relative;
+  transition: 200ms ease;
+  overflow: hidden;
+}
+.image-wrapper img {
+  width: 100%;
+}
+
+.group-container .image-wrapper {
+  height: 45%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.group .wrapper .group-container .margin {
+  padding: 0.3rem 1.5rem;
+}
+.group .wrapper .group-container .title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+.group .wrapper .group-container .field {
+  margin-bottom: 0px;
+  margin-top: 2px;
+  color: rgb(116, 113, 113);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.group .wrapper .group-container .members {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+  color: rgb(116, 113, 113);
+}
+.group .wrapper .group-container:hover {
+  transform: translate(0, -2px);
+  box-shadow: 0 0 10px rgba(220, 220, 221, 0.514);
+}
+.group .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  padding: 0px;
+}
+.wrapper::-webkit-scrollbar {
+  width: 2px;
+}
+
+@media all and (max-width: 1024px) {
+  .group {
+    margin: 20px 2%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .group {
+    margin: 20px 5%;
+    margin-bottom: 70px;
+  }
+  .group-container {
+    margin: 10px 10px 10px 0;
+  }
+  .group a {
+    position: absolute;
+    top: 450px;
+    display: flex;
+    text-decoration: none;
+    color: rgb(74, 151, 214);
+    font-weight: 520;
+    width: 100%;
+    border: 1px solid rgb(74, 151, 214);
+    border-radius: 2px;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+}

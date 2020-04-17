@@ -1,0 +1,48 @@
+.suggestion{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+    border-bottom: 1px solid rgba(236, 234, 234, 0.884);
+    justify-content: center;
+    align-content: center;
+    margin: 0 5% 0 5%;
+}
+.suggestion button{
+    color: gray;
+    border: 1px solid rgb(167, 165, 165);
+    border-radius: 5px;
+    font-size: .8rem;
+    padding: 8px 10px;
+    font-weight: bold;
+    margin: 0 8px;
+    outline: none;
+    background-color: transparent;
+}
+.suggestion .nobreak{
+    white-space: nowrap;
+}
+.suggestion a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+}
+@media all and (max-width: 480px){
+    .suggestion{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        margin: 0 3% 0 3%;
+    }
+    .suggestion button{
+        flex-basis: content;
+    }
+}
+@media all and (max-width: 1024px){
+    .suggestion{
+        margin: 0 3% 0 3%;
+    }
+}

@@ -1,0 +1,45 @@
+.getApp {
+  display: block;
+  padding: 8% 12%;
+  background-color: #ffffff;
+  font-size: 1rem;
+  margin-left: 0;
+  background-image: url(../images/phone.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 800px;
+}
+.getApp .get h1 {
+  margin: 5px 0 5px 0;
+}
+.getApp .get {
+  margin-bottom: 2.5em;
+}
+.getApp a {
+  text-decoration: none;
+  color: #00a2c7;
+}
+.getApp a:visited {
+  color: #00a2c7;
+  text-decoration: none;
+}
+.getApp img {
+  height: 45px;
+  width: 160px;
+  margin-right: 10px;
+}
+@media all and (max-width: 480px) {
+  .getApp {
+    display: block;
+    text-align: center;
+  }
+  .getApp .button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .getApp img {
+    padding: 0 10px;
+    margin: 0;
+  }
+}
