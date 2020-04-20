@@ -22,15 +22,20 @@
   flex-shrink: 1;
   flex-grow: 1;
 }
-.categories .topic-container .img {
+.categories .topic-container .image-wrapper {
   height: 180px;
   width: inherit;
-  background-image: url(../images/1.JPG);
-  background-size: cover;
-  border: 1px solid rgba(194, 192, 192, 0.774);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(201, 201, 204, 0.795);
+  border: 1px solid rgba(194, 192, 192, 0.774);
+  margin: 0px 0px 10px 0px;
+  overflow: hidden;
 }
+
+.categories .topic-container .image-wrapper img {
+  height: 100%;
+}
+
 .categories .topic-container p {
   margin-top: 5px;
   font-size: 1.1rem;

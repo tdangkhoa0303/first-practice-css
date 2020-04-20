@@ -1,123 +1,123 @@
 .event {
-    margin: 20px 10px;
-    position: relative;
+  margin: 20px 10px;
+  position: relative;
 }
 
 .event .bold {
-    font-weight: 700;
-    font-size: 1.4rem;
-    margin: 5px 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 .event a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-decoration: none;
-    color: rgb(74, 151, 214);
-    font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  color: rgb(74, 151, 214);
+  font-weight: 700;
 }
 .event .bar p {
-    margin: 5px 0 20px 0;
+  margin: 5px 0 20px 0;
 }
 .event .wrapper .event-container {
-    border: 0.2px solid rgba(243, 240, 240, 0.705);
-    box-shadow: 0 0 2px rgba(201, 201, 204, 0.452);
-    padding: 0.3rem 1rem;
-    height: 260px;
-    width: 340px;
-    position: relative;
-    border-radius: 10px;
-    transition: 100ms ease;
-    margin: 10px 15px 10px 2px;
-    min-width: 340px;
+  border: 0.2px solid rgba(243, 240, 240, 0.705);
+  box-shadow: 0 0 2px rgba(201, 201, 204, 0.452);
+  padding: 0.3rem 1rem;
+  height: 260px;
+  width: 340px;
+  position: relative;
+  border-radius: 10px;
+  transition: 100ms ease;
+  margin: 10px 15px 10px 2px;
+  min-width: 340px;
 }
 .event .wrapper .event-container .date {
-    color: rgb(74, 151, 214);
-    font-weight: 600;
+  color: rgb(74, 151, 214);
+  font-weight: 600;
 }
 .event .wrapper .event-container .margin {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 .event .wrapper .event-container .title {
-    font-weight: 800;
-    font-size: 1.5rem;
+  font-weight: 550;
+  font-size: 1.2rem;
 }
 .event .wrapper .event-container .content {
-    color: #333;
+  color: #333;
 }
 
 .event .wrapper .event-container .attend span {
-    position: absolute;
-    bottom: 1rem;
-    left: 1.5rem;
-    color: rgb(177, 174, 174);
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  color: rgb(177, 174, 174);
 }
 .event .wrapper .event-container .attend button {
-    position: absolute;
-    bottom: 1rem;
-    right: 1.5rem;
-    color: rgb(74, 151, 214);
-    font-weight: 500;
-    border: 1px solid rgb(53, 148, 226);
-    border-radius: 5px;
-    font-size: 1rem;
-    padding: 8px 10px;
-    background-color: transparent;
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  color: rgb(74, 151, 214);
+  font-weight: 500;
+  border: 1px solid rgb(53, 148, 226);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 8px 10px;
+  background-color: transparent;
 }
 .event .wrapper .event-container .location i {
-    padding: 0 5px 0 0;
+  padding: 0 5px 0 0;
 }
 .event .wrapper .event-container .attend button:hover {
-    background-color: rgb(74, 151, 214);
-    color: white;
+  background-color: rgb(74, 151, 214);
+  color: white;
 }
 .event .wrapper .event-container:hover {
-    transform: translate(0, -2px);
-    box-shadow: 0 0 10px rgba(220, 220, 221, 0.514);
+  transform: translate(0, -2px);
+  box-shadow: 0 0 10px rgba(220, 220, 221, 0.514);
 }
 .wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  padding: 0px;
 }
 .wrapper::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 @media all and (max-width: 1024px) {
-    .event {
-        margin: 20px 2%;
-    }
+  .event {
+    margin: 20px 2%;
+  }
 }
 
 @media all and (max-width: 480px) {
-    .event {
-        margin: 20px 5%;
-        margin-bottom: 70px;
-    }
-    .event-container {
-        margin: 10px 10px 10px 0;
-        height: 256px;
-        width: 340px;
-    }
-    .event a {
-        position: absolute;
-        top: 380px;
-        display: flex;
-        text-decoration: none;
-        color: rgb(74, 151, 214);
-        font-weight: 520;
-        width: 100%;
-        border: 1px solid rgb(74, 151, 214);
-        border-radius: 2px;
-        height: 2em;
-        justify-content: center;
-        align-items: center;
-    }
+  .event {
+    margin: 20px 5%;
+    margin-bottom: 70px;
+  }
+  .event-container {
+    margin: 10px 10px 10px 0;
+    height: 256px;
+    width: 340px;
+  }
+  .event a {
+    position: absolute;
+    top: 380px;
+    display: flex;
+    text-decoration: none;
+    color: rgb(74, 151, 214);
+    font-weight: 520;
+    width: 100%;
+    border: 1px solid rgb(74, 151, 214);
+    border-radius: 2px;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+  }
 }
